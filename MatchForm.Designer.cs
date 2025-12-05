@@ -42,7 +42,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(489, 161);
+            textBox2.Location = new Point(479, 107);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(228, 27);
             textBox2.TabIndex = 1;
@@ -50,7 +50,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(92, 161);
+            textBox1.Location = new Point(82, 107);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(228, 27);
             textBox1.TabIndex = 0;
@@ -59,7 +59,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(92, 138);
+            label1.Location = new Point(82, 84);
             label1.Name = "label1";
             label1.Size = new Size(95, 20);
             label1.TabIndex = 2;
@@ -68,7 +68,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(622, 138);
+            label2.Location = new Point(612, 84);
             label2.Name = "label2";
             label2.Size = new Size(95, 20);
             label2.TabIndex = 3;
@@ -77,7 +77,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(134, 225);
+            label3.Location = new Point(138, 171);
             label3.Name = "label3";
             label3.Size = new Size(117, 20);
             label3.TabIndex = 5;
@@ -85,7 +85,7 @@
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(134, 248);
+            textBox3.Location = new Point(138, 194);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(117, 27);
             textBox3.TabIndex = 4;
@@ -94,7 +94,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(574, 225);
+            label4.Location = new Point(553, 171);
             label4.Name = "label4";
             label4.Size = new Size(117, 20);
             label4.TabIndex = 7;
@@ -102,14 +102,15 @@
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(574, 248);
+            textBox4.Location = new Point(553, 194);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(117, 27);
             textBox4.TabIndex = 6;
+            textBox4.KeyDown += textBox4_KeyDown;
             // 
             // button1
             // 
-            button1.Location = new Point(230, 310);
+            button1.Location = new Point(199, 256);
             button1.Name = "button1";
             button1.Size = new Size(130, 41);
             button1.TabIndex = 8;
@@ -119,7 +120,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(457, 310);
+            button2.Location = new Point(466, 256);
             button2.Name = "button2";
             button2.Size = new Size(142, 41);
             button2.TabIndex = 9;
@@ -143,7 +144,7 @@
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Name = "MatchForm";
-            Text = "Form1";
+            Text = "Match Form";
             ResumeLayout(false);
             PerformLayout();
         }
