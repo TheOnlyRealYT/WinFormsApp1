@@ -8,7 +8,7 @@ namespace WinFormsApp1
         string pathToTeams = "D:\\Work\\game div\\WinFormsApp1\\teams.txt";
         FileStream? fs;
         StreamReader? sr;
-        StreamWriter? sw;
+        StreamWriter? sw;//hamza
         int teamWon = 0;
 
         public MatchForm()
