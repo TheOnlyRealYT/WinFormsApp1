@@ -10,17 +10,21 @@
         public TeamsForm(int pid = -1)
         {
             InitializeComponent();
+            textBox1.AppendText("ID\t| Team Name\t| Score\t| Wins\t| Loses\t| Goals");
             pId = pid;
         }
 
         //ID | Team Name      | Score | Wins | Loses | Goals
         private void button1_Click(object sender, EventArgs e)
         {
+            textBox1.Clear();
             string[] lines = File.ReadAllLines(pathToTeams);
             lines = lines.OrderByDescending(line => int.Parse(line.Split('|')[2].Trim())).ToArray();
+            textBox1.AppendText("ID\t| Team Name\t| Score\t| Wins\t| Loses\t| Goals");
             foreach (string line in lines)
             {
                 string[] fields = line.Trim().Split('|');
+                if (fields[1].Length < 9) fields[1] += "\t";
                 textBox1.AppendText($"\r\n{fields[0]}\t| {fields[1]}\t| " +
                     $"{fields[2]}\t| {fields[3]}\t| {fields[4]}\t| {fields[5]}");
             }

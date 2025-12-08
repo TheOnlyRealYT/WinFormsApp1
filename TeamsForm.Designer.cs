@@ -53,7 +53,6 @@ namespace WinFormsApp1
             textBox1.ReadOnly = true;
             textBox1.Size = new Size(645, 396);
             textBox1.TabIndex = 1;
-            textBox1.Text = "ID | Team Name      | Score | Wins | Loses | Goals";
             // 
             // button1
             // 
