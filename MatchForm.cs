@@ -1,3 +1,4 @@
+using FootballLeague;
 using System;
 
 namespace WinFormsApp1
@@ -8,7 +9,7 @@ namespace WinFormsApp1
         string pathToTeams = "D:\\Work\\game div\\WinFormsApp1\\teams.txt";
         FileStream? fs;
         StreamReader? sr;
-        StreamWriter? sw;//7amada
+        StreamWriter? sw;
         int teamWon = 0;
 
         public MatchForm()
@@ -33,7 +34,7 @@ namespace WinFormsApp1
                         {
                             lines[i] += " ";
                         }
-                    } 
+                    }
                     else if (lines[i].Length > 40)
                     {
                         lines[i] = lines[i].Substring(0, 39); //to cut if its too long :yum::thumbes-up:
@@ -120,7 +121,7 @@ namespace WinFormsApp1
 
         private void textBox1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter) 
+            if (e.KeyCode == Keys.Enter)
             {
                 textBox2.Focus();
             }
@@ -148,6 +149,13 @@ namespace WinFormsApp1
             {
                 button1_Click(sender, e);
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            TeamsForm teamsForm = new TeamsForm();
+            teamsForm.Show();
+            this.Hide();
         }
     }
 }

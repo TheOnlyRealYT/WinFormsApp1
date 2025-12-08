@@ -1,4 +1,4 @@
-1|Al-Ahly|0|0|0|0                      
-2|Barchalona|0|0|0|0                   
-3|Liverpool|0|0|0|0                    
-4|El-Shoruk Club|0|0|0|0               
+1|Al-Ahly|2|0|0|0                      
+2|Barchalona|5|0|0|0                   
+3|Liverpool|1|0|0|0                    
+4|El-Shoruk Club|3|0|0|0               

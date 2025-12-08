@@ -38,6 +38,7 @@
             textBox4 = new TextBox();
             button1 = new Button();
             button2 = new Button();
+            button3 = new Button();
             SuspendLayout();
             // 
             // textBox2
@@ -128,11 +129,22 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // button3
+            // 
+            button3.Location = new Point(751, 12);
+            button3.Name = "button3";
+            button3.Size = new Size(37, 29);
+            button3.TabIndex = 10;
+            button3.Text = "<-";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // MatchForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 435);
+            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label4);
@@ -161,5 +173,6 @@
         private TextBox textBox4;
         private Button button1;
         private Button button2;
+        private Button button3;
     }
 }
