@@ -1,4 +1,4 @@
 1|Al-Ahly|2|0|0|0                      
-2|Barcelona|5|0|0|0                   
+2|Barcelona|5|0|0|0                    
 3|Liverpool|1|0|0|0                    
 4|El-Shoruk Club|3|0|0|0               

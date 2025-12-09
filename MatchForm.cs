@@ -10,7 +10,6 @@ namespace WinFormsApp1
         FileStream? fs;
         StreamReader? sr;
         StreamWriter? sw;
-        int teamWon = 0;
 
         public MatchForm()
         {

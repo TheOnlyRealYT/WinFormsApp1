@@ -16,7 +16,6 @@ namespace FootballLeague
         string pathToPlayers = "D:\\Work\\game div\\WinFormsApp1\\players.txt";
         FileStream? fs;
         StreamReader? sr;
-        StreamWriter? sw;
         string adminId = "0";
         string adminPassword = "123";
         public LoginForm()
