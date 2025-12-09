@@ -33,6 +33,7 @@ namespace WinFormsApp1
             label1 = new Label();
             textBox1 = new TextBox();
             button1 = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -64,11 +65,22 @@ namespace WinFormsApp1
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // button2
+            // 
+            button2.Location = new Point(12, 10);
+            button2.Name = "button2";
+            button2.Size = new Size(34, 29);
+            button2.TabIndex = 3;
+            button2.Text = "<-";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // TeamsForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(textBox1);
             Controls.Add(label1);
@@ -84,5 +96,6 @@ namespace WinFormsApp1
         private Label label1;
         private TextBox textBox1;
         private Button button1;
+        private Button button2;
     }
 }

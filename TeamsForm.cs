@@ -3,9 +3,7 @@
     public partial class TeamsForm : Form
     {
         string pathToTeams = "D:\\Work\\game div\\WinFormsApp1\\teams.txt";
-        FileStream? League_fs;
-        StreamReader? League_sr;
-        StreamWriter? league_sw;
+
         int pId;
         public TeamsForm(int pid = -1)
         {
@@ -25,7 +23,11 @@
             {
                 string[] fields = line.Trim().Split('|');
                 if (fields[1].Length < 9) fields[1] += "\t";
-                textBox1.AppendText($"\r\n{fields[0]}\t| {fields[1]}\t| " +
+                if (int.Parse(fields[0]) == pId)
+                    textBox1.AppendText($"\r\n>> {fields[0]}\t| {fields[1]}\t| " +
+                    $"{fields[2]}\t| {fields[3]}\t| {fields[4]}\t| {fields[5]} <<");
+                else
+                    textBox1.AppendText($"\r\n{fields[0]}\t| {fields[1]}\t| " +
                     $"{fields[2]}\t| {fields[3]}\t| {fields[4]}\t| {fields[5]}");
             }
         }
@@ -33,6 +35,12 @@
         private void TeamsForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Program.loginForm!.Show();
         }
     }
 }

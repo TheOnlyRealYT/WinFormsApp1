@@ -95,7 +95,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(553, 171);
+            label4.Location = new Point(538, 171);
             label4.Name = "label4";
             label4.Size = new Size(117, 20);
             label4.TabIndex = 7;
@@ -103,7 +103,7 @@
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(553, 194);
+            textBox4.Location = new Point(538, 194);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(117, 27);
             textBox4.TabIndex = 6;
@@ -111,7 +111,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(199, 256);
+            button1.Location = new Point(192, 256);
             button1.Name = "button1";
             button1.Size = new Size(130, 41);
             button1.TabIndex = 8;
@@ -157,6 +157,7 @@
             Controls.Add(textBox1);
             Name = "MatchForm";
             Text = "Match Form";
+            FormClosed += MatchForm_FormClosed;
             ResumeLayout(false);
             PerformLayout();
         }

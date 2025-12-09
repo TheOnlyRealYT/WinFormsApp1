@@ -157,5 +157,10 @@ namespace WinFormsApp1
             teamsForm.Show();
             this.Hide();
         }
+
+        private void MatchForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
