@@ -37,7 +37,7 @@ namespace FootballLeague
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string teamFile = @"D:\Work\game div\WinFormsApp1\teams.txt";
+            string teamFile = @"C:\Users\moham\Source\Repos\WinFormsApp1\players.txt";
             player_id = 1;
 
             TeamFile = new FileStream(teamFile, FileMode.Open, FileAccess.Read);
@@ -72,7 +72,7 @@ namespace FootballLeague
             TR.Close();
             TeamFile.Close();
 
-            string addFile = @"D:\Work\game div\WinFormsApp1\players.txt";
+            string addFile = @"C:\Users\moham\Source\Repos\WinFormsApp1\players.txt";
             AddPlayerFile = new FileStream(addFile, FileMode.Open, FileAccess.Read);
             sr = new StreamReader(AddPlayerFile);
             string? read = sr.ReadLine();

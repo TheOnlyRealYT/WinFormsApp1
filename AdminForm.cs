@@ -10,14 +10,11 @@ namespace AdminNewInterface
         public AdminForm()
         {
             InitializeComponent();
-            search.Enabled = false;
-            Insert.Enabled = false;
-            read.Enabled = false;
         }
         FileStream teamfile;
         StreamReader teamReader;
         StreamWriter teamWriter;
-        string filepath = "D:\\Work\\game div\\WinFormsApp1\\teams.txt";
+        string filepath = "C:\\Users\\moham\\Source\\Repos\\WinFormsApp1\\teams.txt";
         int showNextCounter = 0;
         TextBox team_id;
         TextBox ShowRecord;
@@ -276,7 +273,7 @@ namespace AdminNewInterface
             string? line;
             while ((line = teamReader.ReadLine()) != null)
             {
-            count++;
+                count++;
             }
             teamfile.Seek(0, SeekOrigin.End);
             int autoid = count+1;

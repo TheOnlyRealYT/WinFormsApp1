@@ -4,7 +4,7 @@ namespace WinFormsApp1
 {
     public partial class TeamsForm : Form
     {
-        string pathToTeams = "D:\\Work\\game div\\WinFormsApp1\\teams.txt";
+        string pathToTeams = "C:\\Users\\moham\\Source\\Repos\\WinFormsApp1\\teams.txt";
 
         int pId;
         public TeamsForm(int pid = -1)

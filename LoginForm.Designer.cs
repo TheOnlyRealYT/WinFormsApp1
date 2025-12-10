@@ -42,7 +42,7 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.DarkSeaGreen;
+            button1.BackColor = Color.DarkKhaki;
             button1.Location = new Point(105, 343);
             button1.Name = "button1";
             button1.Size = new Size(138, 41);
@@ -64,10 +64,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(58, 159);
+            label1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Olive;
+            label1.Location = new Point(58, 169);
             label1.Name = "label1";
-            label1.Size = new Size(98, 17);
+            label1.Size = new Size(130, 22);
             label1.TabIndex = 2;
             label1.Text = "Enter Your ID :";
             // 
@@ -85,10 +86,11 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.Olive;
             label2.Location = new Point(58, 243);
             label2.Name = "label2";
-            label2.Size = new Size(140, 17);
+            label2.Size = new Size(188, 22);
             label2.TabIndex = 4;
             label2.Text = "Enter Your Password :";
             // 
@@ -108,7 +110,7 @@
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox1.ForeColor = Color.Gray;
-            textBox1.Location = new Point(58, 189);
+            textBox1.Location = new Point(58, 199);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(250, 18);
             textBox1.TabIndex = 3;
@@ -120,12 +122,12 @@
             label3.AutoSize = true;
             label3.BackColor = Color.MintCream;
             label3.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.OliveDrab;
+            label3.ForeColor = Color.Olive;
             label3.Location = new Point(113, 9);
             label3.Name = "label3";
-            label3.Size = new Size(130, 60);
+            label3.Size = new Size(129, 60);
             label3.TabIndex = 7;
-            label3.Text = "LogIn";
+            label3.Text = "Login";
             // 
             // label4
             // 

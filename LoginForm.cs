@@ -15,7 +15,7 @@ namespace FootballLeague
 {
     public partial class LoginForm : Form
     {
-        string pathToPlayers = "D:\\Work\\game div\\WinFormsApp1\\players.txt";
+        string pathToPlayers = "C:\\Users\\moham\\Source\\Repos\\WinFormsApp1\\players.txt";
         FileStream? fs;
         StreamReader? sr;
         string adminId = "0";

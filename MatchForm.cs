@@ -7,7 +7,7 @@ namespace WinFormsApp1
     public partial class MatchForm : Form
     {
 
-        string pathToTeams = "D:\\Work\\game div\\WinFormsApp1\\teams.txt";
+        string pathToTeams = "C:\\Users\\moham\\Source\\Repos\\WinFormsApp1\\teams.txt";
         FileStream? fs;
         StreamReader? sr;
         StreamWriter? sw;
