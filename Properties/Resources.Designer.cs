@@ -63,6 +63,16 @@ namespace FootballLeague.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap download {
+            get {
+                object obj = ResourceManager.GetObject("download", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap WhatsApp_Image_2025_12_10_at_4_30_09_PM {
             get {
                 object obj = ResourceManager.GetObject("WhatsApp Image 2025-12-10 at 4.30.09 PM", resourceCulture);

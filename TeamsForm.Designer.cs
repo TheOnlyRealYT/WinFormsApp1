@@ -45,7 +45,7 @@ namespace WinFormsApp1
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
-            textBox1.Size = new Size(639, 317);
+            textBox1.Size = new Size(628, 256);
             textBox1.TabIndex = 1;
             // 
             // button1
