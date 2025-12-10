@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WinFormsApp1;
 using AdminNewInterface;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace FootballLeague
 {
@@ -47,8 +48,8 @@ namespace FootballLeague
                 string[] fields = new string[4];
                 while (true)
                 {
-                    line = sr.ReadLine()!;
-                    if (string.IsNullOrWhiteSpace(line)) break;
+                    line = sr.ReadLine();
+                    if (line == null) break;
                     line.Split('|').CopyTo(fields, 0);
                     if (int.Parse(fields[0]) != int.Parse(textBox1.Text)) continue;
                     if (fields[2] != textBox2.Text)
