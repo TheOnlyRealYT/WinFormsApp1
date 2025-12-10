@@ -158,5 +158,20 @@ namespace WinFormsApp1
         {
             Application.Exit();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MatchForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

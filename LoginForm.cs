@@ -53,7 +53,7 @@ namespace FootballLeague
                     if (int.Parse(fields[0]) != int.Parse(textBox1.Text)) continue;
                     if (fields[2] != textBox2.Text)
                     {
-                        MessageBox.Show("Invalid Password, Try Again.", "Invalid Password", 
+                        MessageBox.Show("Invalid Password, Try Again.", "Invalid Password",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                         fs.Close();
                         sr.Close();
@@ -66,7 +66,7 @@ namespace FootballLeague
                     sr.Close();
                     return;
                 }
-                MessageBox.Show("Invalid ID, if you dont have an account enter as a guest.", 
+                MessageBox.Show("Invalid ID, if you dont have an account enter as a guest.",
                     "Player Doesnt Exist", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 fs.Close();
                 sr.Close();
@@ -90,6 +90,16 @@ namespace FootballLeague
             TeamsForm player = new TeamsForm();
             player.Show();
             this.Hide();
+        }
+
+        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

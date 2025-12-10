@@ -59,5 +59,45 @@ namespace FootballLeague.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2025_12_10_at_4_30_09_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2025-12-10 at 4.30.09 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2025_12_10_at_4_31_52_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2025-12-10 at 4.31.52 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2025_12_10_at_4_311 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2025-12-10 at 4.311", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2025_12_10_at_4_312 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2025-12-10 at 4.312", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
