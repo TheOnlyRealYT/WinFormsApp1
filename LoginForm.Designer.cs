@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             button1 = new Button();
             button2 = new Button();
             label1 = new Label();
@@ -66,7 +65,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(58, 147);
+            label1.Location = new Point(58, 159);
             label1.Name = "label1";
             label1.Size = new Size(98, 17);
             label1.TabIndex = 2;
@@ -75,10 +74,11 @@
             // textBox2
             // 
             textBox2.BorderStyle = BorderStyle.None;
+            textBox2.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox2.ForeColor = Color.Gray;
             textBox2.Location = new Point(58, 272);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(250, 20);
+            textBox2.Size = new Size(250, 18);
             textBox2.TabIndex = 5;
             textBox2.KeyDown += textBox2_KeyDown;
             // 
@@ -86,7 +86,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(58, 232);
+            label2.Location = new Point(58, 243);
             label2.Name = "label2";
             label2.Size = new Size(140, 17);
             label2.TabIndex = 4;
@@ -106,10 +106,11 @@
             // 
             textBox1.BackColor = Color.White;
             textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox1.ForeColor = Color.Gray;
             textBox1.Location = new Point(58, 189);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(250, 20);
+            textBox1.Size = new Size(250, 18);
             textBox1.TabIndex = 3;
             textBox1.TextChanged += textBox1_TextChanged;
             textBox1.KeyDown += textBox1_KeyDown;
