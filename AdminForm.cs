@@ -39,40 +39,40 @@ namespace AdminNewInterface
             read.Enabled = true;
         }
 
-        private void search_Click(object sender, EventArgs e)
+        private void search_Click(object sender, EventArgs e) 
         {
             splitContainer1.Panel2.Controls.Clear();
             Label l1 = new Label(); l1.Text = "Enter ID:"; l1.Location = new Point(20, 20); l1.AutoSize = true;
-            splitContainer1.Panel2.Controls.Add(l1); l1.Font = new Font("Arial", 14, FontStyle.Regular);
+            splitContainer1.Panel2.Controls.Add(l1); l1.Font = new Font("Times New Roman", 12, FontStyle.Regular); l1.ForeColor = Color.Olive;
 
-            team_id = new TextBox(); team_id.Location = new Point(220, 20); team_id.Font = new Font("Arial", 12, FontStyle.Regular);
-            team_id.KeyDown += Team_id_KeyDown; splitContainer1.Panel2.Controls.Add(team_id); team_id.Width = 220;
+            team_id = new TextBox(); team_id.Location = new Point(220, 20); team_id.Font = new Font("Times New Roman", 9, FontStyle.Regular);
+            team_id.KeyDown += Team_id_KeyDown; splitContainer1.Panel2.Controls.Add(team_id); team_id.Width = 220;team_id.ForeColor = Color.Olive;
 
             ShowRecord = new TextBox();
             ShowRecord.Location = new Point(20, 60); ShowRecord.Multiline = true;
-            ShowRecord.Width = 600; ShowRecord.Height = 350; ShowRecord.Font = new Font("Arial", 12, FontStyle.Regular);
-            splitContainer1.Panel2.Controls.Add(ShowRecord);
+            ShowRecord.Width = 600; ShowRecord.Height = 350; ShowRecord.Font = new Font("Times New Roman", 9, FontStyle.Regular);
+            splitContainer1.Panel2.Controls.Add(ShowRecord);ShowRecord.ForeColor = Color.Olive;
 
             RemoveRec = new Button(); RemoveRec.Text = "Remove Record";
             RemoveRec.Location = new Point(20, 420); RemoveRec.Width = 310; RemoveRec.Height = 50;
-            splitContainer1.Panel2.Controls.Add(RemoveRec);
-            RemoveRec.Click += RemoveRec_Click;
+            splitContainer1.Panel2.Controls.Add(RemoveRec); RemoveRec.Font = new Font("Times New Roman", 12, FontStyle.Regular);
+            RemoveRec.Click += RemoveRec_Click; RemoveRec.ForeColor = Color.Olive;
 
-            rename = new Button(); rename.Text = "Rename Team";
+            rename = new Button(); rename.Text = "Rename Team"; rename.Font = new Font("Times New Roman", 12, FontStyle.Regular);
             rename.Location = new Point(310, 420); rename.Width = 310; rename.Height = 50;
-            splitContainer1.Panel2.Controls.Add(rename); rename.Click += rename_Click;
+            splitContainer1.Panel2.Controls.Add(rename); rename.Click += rename_Click;rename.ForeColor = Color.Olive;
         }
         private void rename_Click(object sender, EventArgs e)
         {
             splitContainer1.Panel2.Controls.Clear();
-            Label l1 = new Label(); l1.Text = "Enter new team name:"; l1.AutoSize = true; l1.Font = new Font("Arial", 14, FontStyle.Regular);
+            Label l1 = new Label(); l1.Text = "Enter new team name:"; l1.AutoSize = true; l1.Font = new Font("Times New Roman", 12, FontStyle.Regular);
             l1.Location = new Point(20, 180); splitContainer1.Panel2.Controls.Add(l1);
 
             TextBox new_team_name = new TextBox(); new_team_name.Location = new Point(300, 180);
-            splitContainer1.Panel2.Controls.Add(new_team_name); new_team_name.Width = 220; new_team_name.Font = new Font("Arial", 12, FontStyle.Regular);
+            splitContainer1.Panel2.Controls.Add(new_team_name); new_team_name.Width = 220; new_team_name.Font = new Font("Times New Roman", 9, FontStyle.Regular);
 
-            Button submit = new Button(); submit.Text = "Rename Record"; submit.Location = new Point(200, 250);
-            splitContainer1.Panel2.Controls.Add(submit); submit.Click += submit_Click; submit.Width = 150; submit.Height = 50;
+            Button submit = new Button(); submit.Text = "Rename Record"; submit.Location = new Point(200, 250); submit.Font = new Font("Times New Roman", 12, FontStyle.Regular);
+            splitContainer1.Panel2.Controls.Add(submit); submit.Click += submit_Click; submit.Width = 150; submit.Height = 50; submit.ForeColor = Color.Olive;
         }
         private void submit_Click(object sender, EventArgs e)
         {
@@ -201,35 +201,38 @@ namespace AdminNewInterface
         private void Insert_Click(object sender, EventArgs e)
         {
             splitContainer1.Panel2.Controls.Clear();
-            Label l1 = new Label(); l1.Text = "Enter team name:"; l1.AutoSize = true;
-            l1.Location = new Point(50, 20); splitContainer1.Panel2.Controls.Add(l1); l1.Font = new Font("Arial", 14, FontStyle.Regular);
+            Label l6 = new Label(); l6.Text = "Add New Team"; l6.AutoSize = true;
+            l6.Location = new Point(180, 20); splitContainer1.Panel2.Controls.Add(l6); l6.Font = new Font("Times New Roman", 16, FontStyle.Regular);
+            l6.ForeColor = Color.Olive;
+            Label l1 = new Label(); l1.Text = "Enter team name:"; l1.AutoSize = true;l1.ForeColor = Color.Olive;
+            l1.Location = new Point(50, 70); splitContainer1.Panel2.Controls.Add(l1); l1.Font = new Font("Times New Roman", 12, FontStyle.Regular);
 
-            Label l2 = new Label(); l2.Text = "Enter team score:"; l2.AutoSize = true;
-            l2.Location = new Point(50, 70); splitContainer1.Panel2.Controls.Add(l2); l2.Font = new Font("Arial", 14, FontStyle.Regular);
+            Label l2 = new Label(); l2.Text = "Enter team score:"; l2.AutoSize = true; l2.ForeColor = Color.Olive;
+            l2.Location = new Point(50, 120); splitContainer1.Panel2.Controls.Add(l2); l2.Font = new Font("Times New Roman", 12, FontStyle.Regular);
 
-            Label l3 = new Label(); l3.Text = "Enter team Wins:"; l3.AutoSize = true;
-            l3.Location = new Point(50, 120); splitContainer1.Panel2.Controls.Add(l3); l3.Font = new Font("Arial", 14, FontStyle.Regular);
+            Label l3 = new Label(); l3.Text = "Enter team Wins:"; l3.AutoSize = true;l3.ForeColor = Color.Olive;
+            l3.Location = new Point(50, 170); splitContainer1.Panel2.Controls.Add(l3); l3.Font = new Font("Times New Roman", 12, FontStyle.Regular);
 
-            Label l4 = new Label(); l4.Text = "Enter team Loses:"; l4.AutoSize = true;
-            l4.Location = new Point(50, 170); splitContainer1.Panel2.Controls.Add(l4); l4.Font = new Font("Arial", 14, FontStyle.Regular);
+            Label l4 = new Label(); l4.Text = "Enter team Loses:"; l4.AutoSize = true; l4.ForeColor = Color.Olive;
+            l4.Location = new Point(50, 220); splitContainer1.Panel2.Controls.Add(l4); l4.Font = new Font("Times New Roman", 12, FontStyle.Regular);
 
-            Label l5 = new Label(); l5.Text = "Enter team Goals:"; l5.AutoSize = true;
-            l5.Location = new Point(50, 220); splitContainer1.Panel2.Controls.Add(l5); l5.Font = new Font("Arial", 14, FontStyle.Regular);
+            Label l5 = new Label(); l5.Text = "Enter team Goals:"; l5.AutoSize = true;l5.ForeColor = Color.Olive;
+            l5.Location = new Point(50, 270); splitContainer1.Panel2.Controls.Add(l5); l5.Font = new Font("Times New Roman", 12, FontStyle.Regular);
 
 
-            team_name = new TextBox(); team_name.Location = new Point(350, 20); team_name.Width = 220; team_name.Font = new Font("Arial", 12, FontStyle.Regular);
-            splitContainer1.Panel2.Controls.Add(team_name); team_name.KeyDown += Team_name_KeyDown;
-            team_score = new TextBox(); team_score.Location = new Point(350, 70); team_score.Width = 220; team_score.Font = new Font("Arial", 12, FontStyle.Regular);
-            splitContainer1.Panel2.Controls.Add(team_score); team_score.KeyDown += Team_score_KeyDown;
-            team_wins = new TextBox(); team_wins.Location = new Point(350, 120); team_wins.Width = 220; team_wins.Font = new Font("Arial", 12, FontStyle.Regular);
-            splitContainer1.Panel2.Controls.Add(team_wins); team_wins.KeyDown += Team_wins_KeyDown;
-            team_loses = new TextBox(); team_loses.Location = new Point(350, 170); team_loses.Width = 220; team_loses.Font = new Font("Arial", 12, FontStyle.Regular);
-            splitContainer1.Panel2.Controls.Add(team_loses); team_loses.KeyDown += Team_loses_KeyDown;
-            team_goals = new TextBox(); team_goals.Location = new Point(350, 220); team_goals.Width = 220; team_goals.Font = new Font("Arial", 12, FontStyle.Regular);
-            splitContainer1.Panel2.Controls.Add(team_goals);
+            team_name = new TextBox(); team_name.Location = new Point(350, 70); team_name.Width = 220; team_name.Font = new Font("Times New Roman", 9, FontStyle.Regular);
+            splitContainer1.Panel2.Controls.Add(team_name); team_name.KeyDown += Team_name_KeyDown;team_name.ForeColor = Color.Olive;
+            team_score = new TextBox(); team_score.Location = new Point(350, 120); team_score.Width = 220; team_score.Font = new Font("Times New Roman", 9, FontStyle.Regular);
+            splitContainer1.Panel2.Controls.Add(team_score); team_score.KeyDown += Team_score_KeyDown;team_score.ForeColor = Color.Olive;
+            team_wins = new TextBox(); team_wins.Location = new Point(350, 170); team_wins.Width = 220; team_wins.Font = new Font("Times New Roman", 9, FontStyle.Regular);
+            splitContainer1.Panel2.Controls.Add(team_wins); team_wins.KeyDown += Team_wins_KeyDown; team_wins.ForeColor = Color.Olive;
+            team_loses = new TextBox(); team_loses.Location = new Point(350, 220); team_loses.Width = 220; team_loses.Font = new Font("Times New Roman", 9, FontStyle.Regular);
+            splitContainer1.Panel2.Controls.Add(team_loses); team_loses.KeyDown += Team_loses_KeyDown; team_loses.ForeColor = Color.Olive;
+            team_goals = new TextBox(); team_goals.Location = new Point(350, 270); team_goals.Width = 220; team_goals.Font = new Font("Times New Roman", 9, FontStyle.Regular);
+            splitContainer1.Panel2.Controls.Add(team_goals); team_goals.ForeColor = Color.Olive;
 
-            AddRec = new Button(); AddRec.Text = "Add Record"; AddRec.Location = new Point(200, 350);
-            splitContainer1.Panel2.Controls.Add(AddRec); AddRec.Click += AddRec_Click; AddRec.Width = 150; AddRec.Height = 50;
+            AddRec = new Button(); AddRec.Text = "Add Record"; AddRec.Location = new Point(200, 350); AddRec.Font = new Font("Times New Roman", 12, FontStyle.Regular);
+            splitContainer1.Panel2.Controls.Add(AddRec); AddRec.Click += AddRec_Click; AddRec.Width = 150; AddRec.Height = 50;AddRec.ForeColor = Color.Olive;
 
 
         }
@@ -314,12 +317,14 @@ namespace AdminNewInterface
             splitContainer1.Panel2.Controls.Clear();
 
             Label l1 = new Label(); l1.Text = "Read Team Info"; l1.AutoSize = true;
-            l1.Location = new Point(220, 20); splitContainer1.Panel2.Controls.Add(l1); l1.Font = new Font("Arial", 16, FontStyle.Regular);
-            Showinfo = new TextBox(); Showinfo.Location = new Point(10, 60); splitContainer1.Panel2.Controls.Add(Showinfo);
-            Showinfo.Multiline = true; Showinfo.Width = 600; Showinfo.Height = 350; Showinfo.Font = new Font("Arial", 12, FontStyle.Regular);
+            l1.Location = new Point(220, 20); splitContainer1.Panel2.Controls.Add(l1); l1.Font = new Font("Times New Roman", 16, FontStyle.Regular);
+            Showinfo = new TextBox(); Showinfo.Location = new Point(10, 60); splitContainer1.Panel2.Controls.Add(Showinfo);l1.ForeColor = Color.Olive;
+            Showinfo.Multiline = true; Showinfo.Width = 600; Showinfo.Height = 350; Showinfo.Font = new Font("Times New Roman", 9, FontStyle.Regular);
+            Showinfo.ForeColor = Color.Olive;
 
             ShowNext = new Button(); ShowNext.Width = 310; ShowNext.Height = 50; splitContainer1.Panel2.Controls.Add(ShowNext);
             ShowNext.Text = "Show teams"; ShowNext.Location = new Point(160, 420); ShowNext.Click += ShowNext_Click;
+            ShowNext.Font = new Font("Times New Roman", 12, FontStyle.Regular); ShowNext.ForeColor = Color.Olive;
         }
         private void ShowNext_Click(object sender, EventArgs e)
         {

@@ -165,5 +165,15 @@ namespace FootballLeague
         {
             Application.Exit();
         }
+
+        private void AddPlayer_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
