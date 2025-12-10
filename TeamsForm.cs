@@ -1,4 +1,6 @@
-﻿namespace WinFormsApp1
+﻿using FootballLeague;
+
+namespace WinFormsApp1
 {
     public partial class TeamsForm : Form
     {
@@ -17,10 +19,16 @@
         {
             textBox1.Clear();
             string[] lines = File.ReadAllLines(pathToTeams);
+            if (string.IsNullOrWhiteSpace(lines[0]))
+            {
+                MessageBox.Show("No teams available.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
             lines = lines.OrderByDescending(line => int.Parse(line.Split('|')[2].Trim())).ToArray();
             textBox1.AppendText("ID\t| Team Name\t| Score\t| Wins\t| Loses\t| Goals");
             foreach (string line in lines)
             {
+                if (line[0] == '*') continue;
                 string[] fields = line.Trim().Split('|');
                 if (fields[1].Length < 9) fields[1] += "\t";
                 if (int.Parse(fields[0]) == pId)
@@ -39,8 +47,9 @@
 
         private void button2_Click(object sender, EventArgs e)
         {
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
             this.Hide();
-            Program.loginForm!.Show();
         }
     }
 }

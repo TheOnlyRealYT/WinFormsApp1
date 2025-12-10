@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             splitContainer1 = new SplitContainer();
+            button3 = new Button();
+            button2 = new Button();
+            button1 = new Button();
             label1 = new Label();
             read = new Button();
             Insert = new Button();
             search = new Button();
             open = new Button();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
             label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
@@ -68,6 +68,36 @@
             splitContainer1.Size = new Size(921, 521);
             splitContainer1.SplitterDistance = 259;
             splitContainer1.TabIndex = 0;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(0, 459);
+            button3.Name = "button3";
+            button3.Size = new Size(256, 59);
+            button3.TabIndex = 8;
+            button3.Text = "Back";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(0, 419);
+            button2.Name = "button2";
+            button2.Size = new Size(256, 43);
+            button2.TabIndex = 7;
+            button2.Text = "Go to Match";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(0, 376);
+            button1.Name = "button1";
+            button1.Size = new Size(256, 44);
+            button1.TabIndex = 6;
+            button1.Text = "Add Player";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label1
             // 
@@ -117,33 +147,6 @@
             open.UseVisualStyleBackColor = true;
             open.Click += open_Click;
             // 
-            // button1
-            // 
-            button1.Location = new Point(0, 376);
-            button1.Name = "button1";
-            button1.Size = new Size(256, 44);
-            button1.TabIndex = 6;
-            button1.Text = "Add Player";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(0, 419);
-            button2.Name = "button2";
-            button2.Size = new Size(256, 43);
-            button2.TabIndex = 7;
-            button2.Text = "Go to Match";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(0, 459);
-            button3.Name = "button3";
-            button3.Size = new Size(256, 59);
-            button3.TabIndex = 8;
-            button3.Text = "Back";
-            button3.UseVisualStyleBackColor = true;
-            // 
             // label2
             // 
             label2.AutoSize = true;
@@ -155,14 +158,15 @@
             label2.TabIndex = 0;
             label2.Text = "Welcome Admin";
             // 
-            // Form1
+            // AdminForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(921, 521);
             Controls.Add(splitContainer1);
-            Name = "Form1";
+            Name = "AdminForm";
             Text = "Form1";
+            FormClosed += AdminForm_FormClosed;
             splitContainer1.Panel1.ResumeLayout(false);
             splitContainer1.Panel1.PerformLayout();
             splitContainer1.Panel2.ResumeLayout(false);

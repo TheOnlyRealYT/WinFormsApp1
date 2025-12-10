@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WinFormsApp1;
+using AdminNewInterface;
 
 namespace FootballLeague
 {
@@ -34,9 +35,9 @@ namespace FootballLeague
             if (id == adminId && pass == adminPassword)
             {
                 MessageBox.Show("Welcome Admin");
-                ///AdminForm admin = new AdminForm();
-                ///admin.Show();
-                ///this.Hide();
+                AdminForm admin = new AdminForm();
+                admin.Show();
+                this.Hide();
             }
             else
             {
@@ -46,8 +47,8 @@ namespace FootballLeague
                 string[] fields = new string[4];
                 while (true)
                 {
-                    line = sr.ReadLine();
-                    if (line == null) break;
+                    line = sr.ReadLine()!;
+                    if (string.IsNullOrWhiteSpace(line)) break;
                     line.Split('|').CopyTo(fields, 0);
                     if (int.Parse(fields[0]) != int.Parse(textBox1.Text)) continue;
                     if (fields[2] != textBox2.Text)

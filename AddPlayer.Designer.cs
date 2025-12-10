@@ -124,6 +124,7 @@
             Controls.Add(textBox1);
             Name = "AddPlayer";
             Text = "AddPlayer";
+            FormClosed += AddPlayer_FormClosed;
             ResumeLayout(false);
             PerformLayout();
         }

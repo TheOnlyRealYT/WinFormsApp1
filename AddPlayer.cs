@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AdminNewInterface;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,7 +30,9 @@ namespace FootballLeague
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            AdminForm adminForm = new AdminForm();
+            adminForm.Show();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -156,6 +159,11 @@ namespace FootballLeague
             {
                 textBox3.Focus();
             }
+        }
+
+        private void AddPlayer_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

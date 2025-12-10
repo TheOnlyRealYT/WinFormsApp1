@@ -1,6 +1,3 @@
-1|Hamza|1234hamza|2                    
-2|Radwa|1234radwa|4                    
-3|El3zaly|1234el3zaly|1                
-4|Jana|1234jana|3                      
-5|Khloud|1234kloud|4                   
-6|Ahmad|1234Ahmad|2                    
+1|Hamza|1234hamza|1                    
+2|Radwa|1234radwa|2                    
+3|Elazaly|1234elazaly|3                

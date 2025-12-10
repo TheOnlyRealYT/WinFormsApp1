@@ -1,5 +1,6 @@
 using FootballLeague;
 using System;
+using AdminNewInterface;
 
 namespace WinFormsApp1
 {
@@ -33,10 +34,6 @@ namespace WinFormsApp1
                         {
                             lines[i] += " ";
                         }
-                    }
-                    else if (lines[i].Length > 40)
-                    {
-                        lines[i] = lines[i].Substring(0, 39); //to cut if its too long :yum::thumbes-up:
                     }
                     break;
                 }
@@ -152,8 +149,8 @@ namespace WinFormsApp1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            TeamsForm teamsForm = new TeamsForm();
-            teamsForm.Show();
+            AdminForm adminForm = new AdminForm();
+            adminForm.Show();
             this.Hide();
         }
 
